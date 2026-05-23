@@ -42,28 +42,26 @@ ssh -p 2233 cxuser@89.208.175.
 
 Локализация (п. 2 задания):
 
-bash
-sudo locale-gen ru_RU.UTF-8
-sudo update-locale LANG=ru_RU.UTF-8
-export LANG=ru_RU.UTF-8
+    bash
+    sudo locale-gen ru_RU.UTF-8
+    sudo update-locale LANG=ru_RU.UTF-8
+    export LANG=ru_RU.UTF-8
 Проверка:
-bash
 
-bash
-locale | grep LANG
-# LANG=ru_RU.UTF-8
----bash
+    bash
+    locale | grep LANG
+    # LANG=ru_RU.UTF-8
 
 3. Пользователи и права sudo (п. 3)
 Создание пользователей alex, zahar, sergei и добавление в группу sudo:
-bash
-bash
-sudo adduser sergei
-sudo usermod -aG sudo sergei
-groups sergei
-# sergei : sergei sudo
----bash
-4. Инструменты мониторинга и управление (п. 4, 5)
+
+        bash
+        sudo adduser sergei
+        sudo usermod -aG sudo sergei
+        groups sergei
+        # sergei : sergei sudo
+
+5. Инструменты мониторинга и управление (п. 4, 5)
 Установка утилит:
 
 bash
