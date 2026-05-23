@@ -1,6 +1,6 @@
 # Отчёт по практике (группа 1)
 
-**Студенты:** Лукашёв Сергей, Прасолов Захар  
+**Студент:** Лукашёв Сергей
 **Направление:** Информационные системы и программирование  
 **Период практики:** 11 мая – 06 июня 2026 г.  
 **Сервер:** CloudX (Ubuntu 24.04), IP: 89.208.175.173 / 10.100.8.189  
@@ -47,6 +47,7 @@ sudo locale-gen ru_RU.UTF-8
 sudo update-locale LANG=ru_RU.UTF-8
 export LANG=ru_RU.UTF-8
 Проверка:
+bash
 
 bash
 locale | grep LANG
@@ -54,7 +55,7 @@ locale | grep LANG
 
 3. Пользователи и права sudo (п. 3)
 Создание пользователей alex, zahar, sergei и добавление в группу sudo:
-
+bash
 bash
 sudo adduser sergei
 sudo usermod -aG sudo sergei
