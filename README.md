@@ -52,6 +52,7 @@ bash
 bash
 locale | grep LANG
 # LANG=ru_RU.UTF-8
+---bash
 
 3. Пользователи и права sudo (п. 3)
 Создание пользователей alex, zahar, sergei и добавление в группу sudo:
@@ -61,6 +62,7 @@ sudo adduser sergei
 sudo usermod -aG sudo sergei
 groups sergei
 # sergei : sergei sudo
+---bash
 4. Инструменты мониторинга и управление (п. 4, 5)
 Установка утилит:
 
